@@ -1,0 +1,292 @@
+.opn-reg{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.opn-bold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+/*Base color*/
+@base-black: #706b73;
+@base-red: #fc7254;
+@white: #fff;
+@base-text: #626262;
+@bg-grey: #f5f5f5;
+@bg-tomi:: #4eb2f7;
+@bg-koimona: #c049f8;
+@bg-koire: #817eff;
+@bg-lara: #f74770;
+/**/
+/*Base settings*/
+body{
+    font-style: 14px;
+    .opn-reg;
+    color: @base-text;
+}
+input, bottom, textarea,
+&:focus{
+    outline: none;
+}
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+#header-main{
+    width: 100%;
+    background: @bg-grey url(../img/bg-main.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 700px;
+    height: 100vh;
+}
+.header-main-head{
+    margin-top: 3%;
+}
+.header-main-logo-border{
+    width: 155px;
+    height: 55px;
+    border: 3px solid @base-black;
+    text-align: center;
+    line-height: 49px;
+}
+
+.header-main-logo-border p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: @base-black;
+}
+
+.header-main-logo-border p .color-line{
+    color: lighten(@base-red, 5%);
+}
+/*
+.header-main-nav{
+    text-align: right;
+}
+*/
+
+.header-main-nav-bar{
+    position: relative;
+    float: right;
+    width: 55px;
+    height: 55px;
+    /*margin-top: -50px;*/
+}
+.header-line-sandwich{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: @base-black;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-2px);
+   -ms-transform: translateY(-2px);
+   -o-transform: translateY(-2px);
+   transform: translateY(-2px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.header-line-sandwich:before{
+    background-color: @base-black;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    content: '';
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-10px);
+   -ms-transform: translateY(-10px);
+   -o-transform: translateY(-10px);
+   transform: translateY(-10px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.header-line-sandwich:after{
+    background-color: @base-black;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    content: '';
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(6px);
+   -ms-transform: translateY(6px);
+   -o-transform: translateY(6px);
+   transform: translateY(6px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*Base settings new!*/
+section{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.section-header{
+    margin-bottom: 7%;
+    h2{
+        font-size: 50px;
+        .opn-bold;
+        span{
+            color: @base-red;
+        }
+    }
+    p{
+        font-size: 16px;
+    }
+}
+/**/
+
+.header-main{
+    &-text{
+        margin-top: 4%;
+        text-align: center;
+        h1{
+            font-style: 50px;
+            .opn-bold;
+            span{
+                color: @base-red;
+            }
+        }
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            
+    }
+    &-form{
+        background-color: @white;
+        margin-top: 5px;
+        padding: 35px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+        border-radius: 2px;
+        box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
+        &-header{
+            text-align: center;
+            font-size: 20px;
+            .opn-bold;
+            span{
+                color: @base-red;
+            }
+        }
+        input, textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid @base-black;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        &-btn{
+            padding: 15px 35px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            border-radius: 50px;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-size: 16px;  
+            color: @white;
+            background-color: @base-red;
+        }
+    }
+}
+
+/*Process section*/
+.process{
+    &-box{
+        color: @white;
+        text-align: center;
+        padding: 25px;
+        padding-top: 35px;
+        i.fa{
+            font-size: 50px;
+        }
+        h4{
+            margin-top: 20px;
+            font-size: 20px;
+            .opn-bold;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    &-btn{
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        margin-left: -40%;
+        background: none;
+        color: @base-black;
+        padding: 15px;
+        width: 80%;
+        border: none;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        border-radius: 50px;
+        background-color: @white;
+        font-size: 16px;
+    
+    }
+}
+.btn-plus{
+    vertical-align: middle;
+    width: 16px;
+    height: 2px;
+    display: inline-block;
+    background-color: @base-black;
+    &:before{
+        display: inline-block;
+        content: '';
+        width: 16px;
+        height: 2px;
+        background-color: @base-black;
+        position: absolute;
+        -webkit-transform: rotate(90deg) translateY(8px);
+        -ms-transform: rotate(90deg) translateY(8px);
+        -o-transform: rotate(90deg) translateY(8px);
+        transform: rotate(90deg) translateY(8px);
+        
+    }
+    
+}
+.box{
+    &-tomi{
+        background-color: @bg-tomi;
+    }
+    &-koimona{
+        background-color: @bg-koimona;
+    }
+    &-koire{
+        background-color: @bg-koire;
+    }
+    &-lara{
+        background-color: @bg-lara;
+    }
+}
+i.fa-camera-retro{
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
